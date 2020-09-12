@@ -4,6 +4,11 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+
+    <div id="slide">
+      <slide-banner />
+    </div>
+
     <router-view/>
   </div>
 </template>
@@ -30,3 +35,9 @@
   color: #42b983;
 }
 </style>
+<script>
+  import SlideBanner from "./components/SlideBanner";
+  export default {
+    components: {SlideBanner}
+  }
+</script>
